@@ -76,7 +76,7 @@
 }
 
 .card:hover {
-    opacity: 0.8;
+    opacity: 0.6;
 }
 
 .card-chip {
@@ -100,4 +100,9 @@
 .card-img-top {
     height: 400px;
 
+}
+
+.card-title {
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
 }
