@@ -27,6 +27,8 @@
 .modal-icons {
     padding: 1.5em;
     justify-content: center;
+    position: relative;
+    left: 25px;
 }
 
 .flex-container {
@@ -65,7 +67,16 @@
 
 .card-deck {
     margin: 0 auto;
-    width: 100%
+    width: 100%;
+}
+
+.card {
+    opacity: 1;
+    transition: 0.3;
+}
+
+.card:hover {
+    opacity: 0.8;
 }
 
 .card-chip {
@@ -86,3 +97,7 @@
     -webkit-font-smoothing: antialiased;
 }
 
+.card-img-top {
+    height: 400px;
+
+}
