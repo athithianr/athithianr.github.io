@@ -18,11 +18,11 @@
 .about {
     text-align: center;
     margin: 0 auto;
-    margin-top: 5%;
+    margin-top: 15%;
 }
 
 .skills {
-    margin-top: 5%;
+    margin-top: 15%;
     text-align: center;
 }
 
@@ -103,13 +103,12 @@
 
     .iframe {
         height:250px;
-
     }
-  }
 
-  .contact {
-    margin-top: 5%;
-    margin-bottom: 5%
+    .iframe2 {
+        height: 350px;
+        margin-top: 5%
+    }
   }
 
   .footer-copyright {
@@ -117,11 +116,16 @@
   }
 
   .experiences {
-    margin-top: 5%
+    margin-top: 15%
 
   }
 
   .projects {
-    margin-top: 5%
+    margin-top: 15%
 
+  }
+
+  .contact {
+    margin-top: 15%;
+    margin-bottom: 5%
   }
