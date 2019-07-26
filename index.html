@@ -15,6 +15,8 @@
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -52,9 +54,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-11 text-center mx-auto col-12">
+                        <div data-aos="fade-right">
                         <h1 style="font-family: Montserrat, sans-serif">Hey guys, I'm Athi!</h1>
+                        </div>
                         <br>
+                        <div data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <p style="font-family: 'Open Sans', sans-serif">Engineer | Developer | Web Designer</p>
+                        </div>
                         <br>
                         <p style="font-family: 'Open Sans', sans-serif">
                             I am an ambitious student studying computer engineering at the University of Waterloo.
@@ -90,6 +98,7 @@
             </div>
         </section>
         <!-- Skills Section -->
+        <div data-aos="fade-up">
         <section class="skills full-screen d-lg-flex " id="skills">
             <div class="container">
                 <div class="row">
@@ -130,7 +139,9 @@
                 </div>
             </div>
         </section>
+        </div>
         <!-- Experience Section-->
+        <div data-aos="fade-up">
         <section class=experiences full-screen d-lg-flex" id="experiences">
             <div class="container">
                 <div class="row">
@@ -154,7 +165,9 @@
                 </div>
             </div>
         </section>
+        </div>
         <!-- Projects Section -->
+        <div data-aos="fade-up">
         <section class="projects full-screen d-lg-flex" id="projects">
             <div class="container">
                 <div class="row">
@@ -226,8 +239,10 @@
             </div>
             <br>
         </div>
+        </div>
         <!--Contact Section-->
-        <section class="contact full-screen d-lg-flex" id="contact">
+        <div data-aos="fade-up">
+            <section class="contact full-screen d-lg-flex" id="contact">
             <div class=container>
                 <div class=row>
                     <div class="col-lg-8 mx-auto">
@@ -265,7 +280,7 @@
             <!-- Copyright -->
         </footer>
         <!-- Footer -->
-
+        </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -276,5 +291,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+<script>
+    AOS.init();
+</script>
 </html>
