@@ -21,6 +21,11 @@ These instructions will get you a copy of the project up and running on your loc
 * [Bootstrap](https://getbootstrap.com/) - An open-source css framework
 * [AOS](https://michalsnik.github.io/aos/) - A library for scroll animations
 
+## Next Steps
+
+* display additional details about projects and experiences when hovering
+* potentially make nav-bar sticky
+* Add more design elements to about section
 
 ## Authors
 
