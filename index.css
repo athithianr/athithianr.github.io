@@ -1,5 +1,19 @@
-.container {
+.center {
     text-align: center;
+}
+.p {
+    font-family: "Source Code Pro", Consolas, "Droid Sans Mono", "Andale Mono", Monaco, Courier;
+
+}
+
+.body {
+    font-family: "Source Code Pro", Consolas, "Droid Sans Mono", "Andale Mono", Monaco, Courier;   
+}
+
+.top {
+    border-left: 0;
+    margin-left: -3em;
+    margin-top: 3em;
 }
 
 .footer {
@@ -16,7 +30,7 @@
 }
 
 .about {
-    text-align: center;
+    /* text-align: center; */
     margin-top: 15%;
 }
 
@@ -32,7 +46,7 @@
 .flex-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     padding: 10px 22px;
 }
 
@@ -68,7 +82,7 @@
 }
 
 .card-chip {
-    font-family: "Roboto", sans-serif;
+    font-family: "Source Code Pro", Consolas, "Droid Sans Mono", "Andale Mono", Monaco, Courier;
     font-weight: 400;
     background-color: #D2F1FF;
     color: #0076FF;

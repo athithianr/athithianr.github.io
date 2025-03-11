@@ -21,270 +21,53 @@
 
 <body>
     <div class="container">
-        <!-- A grey horizontal navbar that becomes vertical on small screens -->
-        <nav class="navbar sticky-top navbar-expand-sm  navbar-light bg-light sticky">
-            <a class="navbar-brand" style="font-family: Montserrat" href="#">Home</a>
-            <!-- Toggler/collapsibe Button -->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!-- Links -->
-            <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                <ul class="navbar-nav" style="font-family: Montserrat">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experiences">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+        <div id="navbar-placeholder"></div>
         <!-- About Section-->
         <section class="about full-screen d-lg-flex " id="about">
             <div class="container">
+                <!-- <img style="width: 20em;height:30em" src="grad.jpg"></img> -->
                 <div class="row">
-                    <div class="col-lg-11 text-center mx-auto col-12">
+                    <div class="col-lg-11  mx-auto col-12">
+                        
                         <div data-aos="fade-right">
-                            <h1 style="font-family: Montserrat, sans-serif">Hey guys, I'm Athi!</h1>
+                            <h1 >Hey!</h1>
                         </div>
                         <br>
-                        <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                        <!-- <div data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
                             <p style="font-family: 'Open Sans', sans-serif">Student | Engineer | Developer</p>
-                        </div>
+                        </div> -->
                         <br>
-                        <p style="font-family: 'Open Sans', sans-serif">
-                            I am a recent graduate from the University of Waterloo in Computer Engineering with a passion for software development. My goals in engineering revolve
-                            around producing quality technology that can make a substantial difference in people’s
-                            lives. I pride myself in being able to display high levels of competence in programming and
-                            engineering design while being excellent at problem solving, thinking innovatively and
-                            working well with a team. I am currently seeking 2024 SWE new grad roles!
+                        <p style="font: 1.1em / 1.5em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier;">
+                            My name is Athi Rajkumar
                         </p>
+
+                        <p style="font: 1.1em / 1.5em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier">
+                           I recently graduated from the University of Waterloo in Computer Engineering with distinction. I now work in a contract role at Hitachi Rail as a software engineer, building a platform in Django to automate the managment and generation of railway project configurations (basically defines how everything is connected & setup based on the railway site)
+                        </p>
+                        <p style="font: 1.1em / 1.5em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier;">
+                            I was able to learn invaluable skills and experiences through 6 four month internships at places like Security Compass, Clearbridge Mobile, Empire Life Insurance, Uplift, & OpenText.
+                         </p>
+                         <p style="font: 1.1em / 1.5em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier;">
+                            I was able to wear many hats - building full stack solutions, writing tests, fixing bugs, even doing some devops. 
+                         </p>
+                         <p style="font: 1.1em / 1.5em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier;">
+                            I like building cool things in my free time - usually to make my life easier in someway or just to learn new technologies. You can find these projects on my <a href="https://github.com/athithianr">GitHub</a>. 
+                         </p>
+                         <p style="font: 1.1em / 1.5em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier;">
+                            I recently became enamoured by the world of stocks, particularily value-investing & how to beat markets with ideas where the upside heavily outweighs the downside. To put it simply - "heads I win, tails I don't lose"  
+                         </p>
+                         <p style="font: 1.1em / 1.1em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier;">
+                            I share my ideas with a community of over 200 people on Substack under the moniker: <a href="https://substack.com/@phenomcapital">Phenom Capital</a>
+                         </p>
+                         <p style="font: 1.1em / 1.1em 'Source Code Pro', Consolas, 'Droid Sans Mono', Andale Mono, Monaco, Courier;">
+                            Let's stay in touch - find me on <a href="https://www.linkedin.com/in/athi-rajkumar/">LinkedIn</a> or send me an <a href= "mailto:a9rajkum@uwaterloo.ca">Email</a>
+                         </p>
                         <br>
-                        <div class="modal-icons">
-                            <div class="flex-container">
-                                <div class="flex">
-                                    <a href="https://github.com/athithianr" target="_blank">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                </div>
-                                <div class="flex">
-                                    <a href="https://www.linkedin.com/in/athi-rajkumar-141301179/" target="_blank">
-                                        <i class="fa fa-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="flex">
-                                    <a href="https://docdro.id"
-                                        target="_blank">
-                                        <i class="fa fa-file"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Skills Section -->
-        <div id="skills">
-            <div data-aos="fade-up">
-                <section class="skills full-screen d-lg-flex">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-11 text-center mx-auto col-12">
-                                <div class="col-lg-8 mx-auto">
-                                    <h2 style="font-family: Montserrat, sans-serif">Skills</h2>
-                                    <br>
-                                </div>
-                                <div class="card-deck">
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Software</h5>
-                                            <p class="card-text">
-                                                Visual Studio<br> Git <br> SVN <br> Bash <br> JIRA <br> Docker
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Languages</h5>
-                                            <p class="card-text">
-                                                Python <br> C++<br> C <br> Javascript <br> Java <br> VHDL
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Frameworks/Tools</h5>
-                                            <p class="card-text">
-                                                React.js <br> Node.js <br> HTML <br> CSS <br>
-                                                Bootstrap <br> Material UI <br>
-                                                Styled Components<br> MongoDB <br> <br>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <!-- Experience Section-->
-        <div id="experiences">
-            <div data-aos="fade-up">
-                <section class=experiences full-screen d-lg-flex>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-6 text-center mx-auto col-12">
-                                <div class="col-lg-8 mx-auto">
-                                    <h2 style="font-family: Montserrat, sans-serif">Experience</h2>
-                                    <br>
-                                </div>
-                                <div class="container">
-                                    <div class="card">
-                                        <img src="images/sc.png" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-text">Software Engineering Intern</h5>
-                                            <div class="card-chip w3-hide-small">Python</div>
-                                            <div class="card-chip w3-hide-small">REST API</div>
-                                            <div class="card-chip w3-hide-small">Git</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
-        </div>
-        <!-- Projects Section -->
-        <div id="projects">
-            <div data-aos="fade-up">
-                <section class="projects full-screen d-lg-flex">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-lg-11 text-center mx-auto col-12">
-                                <div class="col-lg-8 mx-auto">
-                                    <h2 style="font-family: Montserrat, sans-serif">Projects</h2>
-                                    <br>
-                                </div>
-                                <div class=card-deck>
-                                    <div class="card">
-                                        <img src="images/design-day.jpg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-text">Solar Tracker Challenge</h5>
-                                            <div class="card-chip w3-hide-small">C++</div>
-                                            <div class="card-chip w3-hide-small">Raspberry Pi</div>
-                                            <div class="card-chip w3-hide-small">Arduino</div>
-                                            <a href="https://github.com/athithianr" target="_blank">
-                                                <i style="font-size: 25px;color: black" class="fa fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="card">
-                                        <img src="images/Capture.PNG" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-text">RunEscape</h5>
-                                            <div class="card-chip w3-hide-small">JavaScript</div>
-                                            <div class="card-chip w3-hide-small">HTML</div>
-                                            <div class="card-chip w3-hide-small">CSS</div>
-                                            <a href="https://github.com/athithianr/RunEscape" target="_blank">
-                                                <i style="font-size: 25px;color: black" class="fa fa-github"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </section>
-                <br>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-11 text-center mx-auto col-12">
-                            <div class=card-deck>
-                                <div class="card">
-                                    <img src="images/chrome-extension.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-text">Athi's Media</h5>
-                                        <div class="card-chip w3-hide-small">Javascript</div>
-                                        <div class="card-chip w3-hide-small">HTML</div>
-                                        <div class="card-chip w3-hide-small">CSS</div>
-                                        <div class="card-chip w3-hide-small">REST API</div>
-                                        <a href="https://github.com/athithianr/Athi-s-Media" target="_blank">
-                                            <i style="font-size: 25px;color: black" class="fa fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="card">
-                                    <img src="images/social-network.jpg" class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-text">Social Networking Tool</h5>
-                                        <div class="card-chip w3-hide-small">C++</div>
-                                        <div class="card-chip w3-hide-small">SVN</div>
-                                        <a href="https://github.com/athithianr/TrustNetworks" target="_blank">
-                                            <i style="font-size: 25px;color: black" class="fa fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <!--Contact Section-->
-        <div id="contact">
-            <div data-aos="fade-up">
-                <section class="contact full-screen d-lg-flex">
-                    <div class=container>
-                        <div class=row>
-                            <div class="col-lg-8 mx-auto">
-                                <h2 style="font-family: Montserrat, sans-serif">Lets stay in touch!</h2>
-                                <br>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="card">
-                                    <iframe class=iframe
-                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1447.7215816987302!2d-80.54609141967913!3d43.47222113674347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882bf6ad02edccff%3A0xdd9df23996268e17!2sUniversity+of+Waterloo!5e0!3m2!1sen!2sca!4v1563986449600!5m2!1sen!2sca"
-                                        width="100%" height="400px" frameborder="0" style="border:0" allowfullscreen=""
-                                        style="position:absolute; top:0; left: 0"></iframe>
-                                    <div class="card-body">
-                                        <h5 class="card-text">Find me here!</h5>
-                                        <a href="mailto:a9rajkum@uwaterloo.ca?Subject=Hey"
-                                            target="_top">a9rajkum@uwaterloo.ca</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=col-lg-6>
-                                <iframe class=iframe2 width="640px" height="480px"
-                                    src="https://forms.office.com/Pages/ResponsePage.aspx?id=vlaRw4USl0WEX9NIZO5pmPsRQU8wM9hDjTy0YllFIk5UMDI1U1lBUEZNR1Y3NFU4QVZQREc4WUZMMy4u&embed=true"
-                                    frameborder="0" marginwidth="0" marginheight="0"
-                                    style="border: none; max-width:100%; max-height:100vh" allowfullscreen
-                                    webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!--Footer Section-->
-                <!-- Footer -->
-                <footer class="page-footer font-small blue pt-4">
-                    <!-- Copyright -->
-                    <div class="footer-copyright text-center py-3">Copyright © Athi Rajkumar. All rights reserved</div>
-                    <!-- Copyright -->
-                </footer>
-                <!-- Footer -->
-            </div>
+
         </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -298,6 +81,11 @@
     crossorigin="anonymous"></script>
 <script>
     AOS.init();
+    fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
 </script>
 
 </html>

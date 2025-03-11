@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bar and Pie Charts</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        canvas {
+            margin: 50px 0;
+            width: 750px !important;
+            height: 750px !important;
+            padding-left: 0;
+            padding-right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+    </style>
+    <link rel="icon" href="https://img.icons8.com/metro/26/000000/monitor.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="navbar-placeholder"></div>
+
+        <canvas id="pieChart"></canvas>
+
+    <script>
+        const labels = ['CASH', 'CNRD', 'PRAA', 'TLT', 'MAGN', 'PPSI', 'GLXZ', 'HITI:CA', 'THRY', 'CCLD', 'ROMJ.V', 'ICCC', 'HE', 'BOSC', 'JOB', 'CLF', 'LFMD', 'OGI.TO', 'SUP', 'AVNT.TO'];
+        const dataValues = [20442.75, 10565.37, 5718.23, 5181.24, 3468.63, 2751.33, 2501.21, 2408, 2399.15, 2386.21, 2250, 2203.03, 1976.81, 1669.00, 1585.68, 1410.24, 1342.72, 1208, 914.39, 684.00];
+        const total = dataValues.reduce((acc, val) => acc + val, 0);
+
+        const ctxPie = document.getElementById('pieChart').getContext('2d');
+        const pieChart = new Chart(ctxPie, {
+            type: 'pie',
+            data: {
+                labels: labels,
+                datasets: [{
+                    data: dataValues,
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)',
+                        'rgba(255, 99, 132, 0.2)', 'rgba(54, 162, 235, 0.2)', 'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)', 'rgba(153, 102, 255, 0.2)', 'rgba(255, 159, 64, 0.2)',
+                        'rgba(99, 255, 132, 0.2)', 'rgba(162, 54, 235, 0.2)', 'rgba(206, 255, 86, 0.2)',
+                        'rgba(192, 75, 75, 0.2)', 'rgba(102, 153, 255, 0.2)', 'rgba(159, 255, 64, 0.2)',
+                        'rgba(132, 255, 99, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)',
+                        'rgba(255, 99, 132, 1)', 'rgba(54, 162, 235, 1)', 'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)', 'rgba(153, 102, 255, 1)', 'rgba(255, 159, 64, 1)',
+                        'rgba(99, 255, 132, 1)', 'rgba(162, 54, 235, 1)', 'rgba(206, 255, 86, 1)',
+                        'rgba(192, 75, 75, 1)', 'rgba(102, 153, 255, 1)', 'rgba(159, 255, 64, 1)',
+                        'rgba(132, 255, 99, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function (tooltipItem) {
+                                let value = tooltipItem.raw;
+                                let percentage = ((value / total) * 100).toFixed(2) + '%';
+                                return `${tooltipItem.label}: ${percentage}`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <script>
+        fetch('navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+    </script>
+    </div>
+</body>
+</html>
