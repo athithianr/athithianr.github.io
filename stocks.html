@@ -35,8 +35,8 @@
         <canvas id="pieChart"></canvas>
 
     <script>
-        const labels = ['CASH', 'CNRD', 'PRAA', 'TLT', 'MAGN', 'PPSI', 'GLXZ', 'HITI:CA', 'THRY', 'CCLD', 'ROMJ.V', 'ICCC', 'HE', 'BOSC', 'JOB', 'CLF', 'LFMD', 'OGI.TO', 'SUP', 'AVNT.TO'];
-        const dataValues = [20442.75, 10565.37, 5718.23, 5181.24, 3468.63, 2751.33, 2501.21, 2408, 2399.15, 2386.21, 2250, 2203.03, 1976.81, 1669.00, 1585.68, 1410.24, 1342.72, 1208, 914.39, 684.00];
+        const labels = ['CASH', 'CNRD', 'TLT', 'MAGN', 'ICCC', 'PRAA', 'CCLDO', 'PPSI', 'ROMJ.V', 'GLXZ', 'HITI:CA', 'THRY', 'LFMD', 'HE', 'CLF', 'JOB', 'OGI.TO', 'CCLD', 'SUP', 'BRMI.TO', 'AVNT.TO'];
+        const dataValues = [24472.3, 10359, 5189.28, 3309.70, 3230.71, 2819.95, 2819.95, 2771, 2550, 2469, 2436, 2204, 2136, 1940.60, 1495, 1478, 1470, 1269, 962.50, 699.20, 576];
         const total = dataValues.reduce((acc, val) => acc + val, 0);
 
         const ctxPie = document.getElementById('pieChart').getContext('2d');
